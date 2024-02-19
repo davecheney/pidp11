@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2 -Wno-unused-result" CACHE STRING "Set C++ Compiler Flags" FORCE)
+
 project (pidp11)
 
 set(BLINKENLIGHT_COMMON_DIR ${PROJECT_SOURCE_DIR}/src/00_common)
