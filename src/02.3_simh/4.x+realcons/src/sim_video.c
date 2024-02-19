@@ -1324,7 +1324,7 @@ t_stat vid_erase_win(void)
     return SCPE_NOFNC;
 }
 
-t_stat vid_setpixel(ix, iy, level, color)
+t_stat vid_setpixel(int ix,int iy,int level,int color)
 {
     return SCPE_NOFNC;
 }
