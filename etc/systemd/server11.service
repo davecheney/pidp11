@@ -1,0 +1,11 @@
+[Unit]
+Description=Blinkenbone server
+Requires=rpcbind.service
+
+[Service]
+Type=simple
+ExecStart=/opt/pidp11/bin/server11
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
