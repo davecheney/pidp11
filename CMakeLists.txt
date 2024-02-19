@@ -173,3 +173,8 @@ target_link_libraries(client11
         tirpc
         pcap
 )
+
+set(SCANSW_SOURCES 
+    ${PROJECT_SOURCE_DIR}/src/11_pidp_server/scanswitch/scansw.c
+)
+add_executable(scansw ${SCANSW_SOURCES})
