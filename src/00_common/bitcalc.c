@@ -157,7 +157,7 @@ unsigned char BitsMirrored[256] =
  }
  printf("\n");
  }
- /**/
+*/
 
 // how many digits has the decimal representation of 2^n?
 // example: n= 10, 2^10 = 1024 -> 4 digits
@@ -197,7 +197,7 @@ if (i < 64) printf(", ") ;
  printf("} ; \n");
 
  }
- /**/
+*/
 
 uint64_t mirror_bits(uint64_t value, unsigned bitlen)
 {

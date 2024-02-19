@@ -26,7 +26,9 @@
 
 #ifdef WIN32
 #include <errno.h>
-#else
+#elif defined(__APPLE__)
+#include <errno.h>
+#else 
 #include <asm-generic/errno-base.h>
 #endif
 

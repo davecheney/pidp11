@@ -39,6 +39,7 @@
 #define BLINKENLIGHT_API_SERVER_PROCS_C_
 #include <stdlib.h>
 #include <assert.h>
+#include <string.h>
 
 #include "print.h"
 

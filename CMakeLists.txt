@@ -130,7 +130,6 @@ target_include_directories(server11
 target_link_libraries(server11
     PRIVATE
         pthread
-        rt
         tirpc
 )
 
@@ -168,7 +167,6 @@ target_include_directories(client11
 target_link_libraries(client11
     PRIVATE
         pthread
-        rt
         m
         dl
         readline
