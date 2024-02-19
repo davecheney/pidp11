@@ -133,9 +133,9 @@ target_link_libraries(server11
 )
 
 set(CLIENT11_SOURCES
-    ${PDP11_SOURCES}
-    ${SIM_SOURCES}
     ${REALCONS_SOURCES}
+    ${SIM_SOURCES}
+    ${PDP11_SOURCES}
 )
 add_executable(client11 ${CLIENT11_SOURCES})
 
@@ -146,6 +146,7 @@ target_compile_definitions(client11
         _GNU_SOURCE
         __STRICT_ANSI__
         BLINKENLIGHT_CLIENT
+        USE_REALCONS
         VM_PDP11
         USE_NETWORK
         HAVE_PCAP_NETWORK
