@@ -6,7 +6,6 @@ project (pidp11)
 
 set(BLINKENLIGHT_COMMON_DIR ${PROJECT_SOURCE_DIR}/src/00_common)
 set(BLINKENLIGHT_API_DIR ${PROJECT_SOURCE_DIR}/src/07.0_blinkenlight_api)
-set(BLINKENLIGHT_SERVER_DIR ${PROJECT_SOURCE_DIR}/src/07.1_blinkenlight_server)
 set(SIM_SOURCES_DIR ${PROJECT_SOURCE_DIR}/src/02.3_simh/4.x+realcons/src)
 set(PDP11_SOURCES_DIR ${SIM_SOURCES_DIR}/PDP11)
 set(REALCONS_DIR ${SIM_SOURCES_DIR}/REALCONS)
@@ -107,7 +106,7 @@ set(SERVER11_SOURCES
     src/11_pidp_server/pidp11/main.c
     src/11_pidp_server/pidp11/gpio.c
     src/11_pidp_server/pidp11/gpiopattern.c	
-	${BLINKENLIGHT_SERVER_DIR}/print.c
+	src/11_pidp_server/pidp11/print.c
     ${BLINKENLIGHT_API_SOURCES}
 )
 add_executable(server11 ${SERVER11_SOURCES})
@@ -123,7 +122,6 @@ target_include_directories(server11
         ${BLINKENLIGHT_COMMON_DIR}
         ${BLINKENLIGHT_API_DIR}
         ${BLINKENLIGHT_API_DIR}/rpcgen_linux
-        ${BLINKENLIGHT_SERVER_DIR}
         /usr/include/tirpc
 )
 
